@@ -1,15 +1,15 @@
 package com.gusgluna.timestampmicroservicespringboot.Collection;
 
 public class DateApi {
-    String unix;
+    Long unix;
     String utc;
 
 
-    public String getUnix() {
+    public Long getUnix() {
         return unix;
     }
 
-    public void setUnix(String unix) {
+    public void setUnix(Long unix) {
         this.unix = unix;
     }
 
@@ -30,7 +30,7 @@ public class DateApi {
     }
 
 
-    public DateApi(String unix, String utc) {
+    public DateApi(Long unix, String utc) {
         this.unix = unix;
         this.utc = utc;
     }

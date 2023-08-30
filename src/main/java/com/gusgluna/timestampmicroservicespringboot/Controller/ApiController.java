@@ -1,5 +1,6 @@
 package com.gusgluna.timestampmicroservicespringboot.Controller;
 
+import com.gusgluna.timestampmicroservicespringboot.Collection.DateApi;
 import com.gusgluna.timestampmicroservicespringboot.Service.DateApiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +14,7 @@ public class ApiController {
     @Autowired
     private DateApiService dateApiService;
     @GetMapping
-    public String api(){
-        return dateApiService.getActualDate().getUnix()+ " " + dateApiService.getActualDate().getUtc();
+    public DateApi api(){
+        return dateApiService.getActualDate();
     }
 }
