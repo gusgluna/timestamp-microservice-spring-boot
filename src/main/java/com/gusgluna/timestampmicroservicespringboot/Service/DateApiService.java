@@ -4,4 +4,6 @@ import com.gusgluna.timestampmicroservicespringboot.Collection.DateApi;
 
 public interface DateApiService {
     DateApi getActualDate();
+
+    DateApi getStringDate(String strDate);
 }
